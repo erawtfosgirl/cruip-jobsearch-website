@@ -1,0 +1,761 @@
+.postjob-main {
+    display: flex;
+    .content-postjob-wrapper {
+        width: 50%;
+        height: auto;
+        position: relative;
+        .content-postjob-container {
+            max-width: 29rem;
+            width: 100%;
+            height: 100%;
+            padding: 0 1.5rem;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            .postjob-header {
+                .header-container {
+                    height: 4rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    svg {
+                        .c05gp {
+                            fill: #6366f1;
+                        }
+                        .crxnc {
+                            fill: #a5b4fc;
+                        }
+                    }
+                }
+            }
+            .form-container {
+                padding: 2rem 0;
+                .title-box {
+                    margin-bottom: 2.5rem;
+                    .title {
+                        font-size: 2.25rem;
+                        font-weight: 800;
+                        margin-bottom: 1rem;
+                    }
+                    .subtitle {
+                        color: #6b7280;
+                    }
+                }
+
+                form {
+                    .group-box {
+                        .group-title {
+                            font-size: 1.125rem;
+                            line-height: 1.5;
+                            font-weight: 700;
+                            margin-bottom: 1.25rem;
+                            span {
+                                color: $base-color;
+                            }
+                        }
+
+                        .group-list {
+                            .group-item {
+                                margin-bottom: 1rem;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+
+                                textarea {
+                                    resize: vertical;
+                                }
+
+                                .group-label {
+                                    font-size: 0.875rem;
+                                    font-weight: 500;
+                                    .required-span {
+                                        color: red;
+                                    }
+                                    .optional-span {
+                                        color: rgb(84, 84, 84);
+                                    }
+                                }
+                                .group-input {
+                                    padding: 0.7rem 0.75rem;
+                                    font-size: 0.875rem;
+                                    outline: none;
+                                    width: 100%;
+                                    border-radius: 0.25rem;
+                                    border: 1px solid #a5acba70;
+                                }
+                               
+
+                                .example {
+                                    font-size: 0.75rem;
+                                    font-style: italic;
+                                    color: rgb(84, 84, 84);
+                                }
+
+                                .group-item-box {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1rem;
+                                    .left-box {
+                                        img {
+                                            width: 4rem;
+                                            border: 1px solid #a5acba70;
+                                            border-radius: 9999px;
+                                        }
+                                    }
+                                    .right-box {
+                                        input[type="file"] {
+                                            position: relative;
+                                            appearance: none !important;
+                                            color: rgb(92, 92, 92);
+                                        }
+                                        input[type="file"]::file-selector-button {
+                                            border-radius: 4px;
+                                            padding: 0 16px;
+                                            height: 40px;
+                                            cursor: pointer;
+                                            background-color: rgb(105, 60, 255);
+                                            margin-right: 16px;
+                                            transition: background-color 200ms;
+                                            border: none;
+                                            border-radius: 20px;
+                                            color: #fff;
+                                            font-weight: 600;
+                                            &:hover {
+                                                background-color: rgb(95, 54, 230);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .custom-btn {
+                                padding: 0.75rem 1rem;
+                                width: 100%;
+                                border: 1px solid #a5acba70;
+                                border-radius: 0.25rem;
+                                background-color: #ffffff;
+                                cursor: pointer;
+                                margin-bottom: 1rem;
+
+                                .btn-box {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    .left {
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: start;
+                                        .top-txt {
+                                            font-weight: 500;
+                                            font-size: 0.875rem;
+                                            line-height: 1.5715;
+                                            margin-bottom: 0.25rem;
+                                        }
+                                        .bottom-txt {
+                                            font-size: 0.875rem;
+                                            line-height: 1.5715;
+                                            color: rgb(84, 84, 84);
+                                            font-style: italic;
+                                        }
+                                    }
+                                    .right {
+                                        border: 1px solid #a5acba70;
+                                        border-radius: 9999px;
+                                        cursor: pointer;
+                                        svg {
+                                            vertical-align: middle;
+                                        }
+                                        .c05gp {
+                                            fill: #6366f1;
+                                        }
+                                    }
+                                }
+                            }
+
+                            .btn-pay {
+                                width: 100%;
+                                background-color: $base-color;
+                                padding: 0.7rem 0.75rem;
+                                border-radius: 9999px;
+                                border: none;
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                color: #ffffff;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                margin-bottom: 1rem;
+                                &:hover {
+                                    background-color: $base-hover-color;
+                                }
+                            }
+
+                            .service-txt {
+                                font-size: 0.75rem;
+                                line-height: 1.5;
+                                margin-bottom: 3rem;
+                                a{
+                                    text-decoration: underline;
+                                    color: #0ea5ec;
+                                }
+                            }
+                        }
+                    }
+                    .divider-box {
+                        margin: 1.5rem 0;
+                        display: flex;
+                        align-items: center;
+                        .line {
+                            flex-grow: 1;
+                            border-top: 1px solid #a5acba70;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-side-wrapper {
+        width: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+
+        .bg-box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            // background-color: #61a2d0;
+        }
+        .illustration-box {
+            position: absolute;
+            right: 0;
+            z-index: -10;
+        }
+
+        .quotes-wrapper {
+            .testimonial-container {
+                max-width: 36rem;
+                width: 100%;
+                margin: 0 auto;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .testimonial-item {
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                    background-color: #f0f9ff;
+                    border-radius: 0.75rem;
+                    border: 1px solid #9bf6e5;
+
+                    .testimonial-box {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+
+                        .testimonial-img {
+                            position: relative;
+                            img {
+                                border-radius: 9999px;
+                                width: 90px;
+                                height: 90px;
+                            }
+                            .curhz {
+                                fill: #818cf8;
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                            }
+                        }
+
+                        figure {
+                            blockquote {
+                                p {
+                                    font-weight: 700;
+                                    font-size: 1rem;
+                                    color: #1f2937;
+                                    line-height: 1.5rem;
+                                }
+                            }
+                            figcaption {
+                                font-weight: 500;
+                                font-size: 0.875rem;
+                                color: #55545c;
+                                margin-top: 0.5rem;
+                                a {
+                                    color: #14b8a6;
+                                }
+                                .dif-domen-color {
+                                    color: #0ea5ec;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .hover-item {
+                    opacity: 0.3;
+                    transition: 0.2s;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .postjob-main {
+        display: flex;
+        .content-postjob-wrapper {
+            width: 100%;
+            height: auto;
+            position: relative;
+            .content-postjob-container {
+                max-width: 29rem;
+                width: 100%;
+                height: 100%;
+                padding: 0 1.5rem;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                flex-direction: column;
+                .postjob-header {
+                    .header-container {
+                        height: 4rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        svg {
+                            .c05gp {
+                                fill: #6366f1;
+                            }
+                            .crxnc {
+                                fill: #a5b4fc;
+                            }
+                        }
+                    }
+                }
+                .form-container {
+                    padding: 2rem 0;
+                    .title-box {
+                        margin-bottom: 2.5rem;
+                        .title {
+                            font-size: 2.25rem;
+                            font-weight: 800;
+                            margin-bottom: 1rem;
+                        }
+                        .subtitle {
+                            color: #6b7280;
+                            line-height: 1.5rem;
+                        }
+                    }
+    
+                    form {
+                        .group-box {
+                            .group-title {
+                                font-size: 1.125rem;
+                                line-height: 1.5;
+                                font-weight: 700;
+                                margin-bottom: 1.25rem;
+                                span {
+                                    color: $base-color;
+                                }
+                            }
+    
+                            .group-list {
+                                .group-item {
+                                    margin-bottom: 1rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1rem;
+    
+                                    textarea {
+                                        resize: vertical;
+                                    }
+    
+                                    .group-label {
+                                        font-size: 0.875rem;
+                                        font-weight: 500;
+                                        .required-span {
+                                            color: red;
+                                        }
+                                        .optional-span {
+                                            color: rgb(84, 84, 84);
+                                        }
+                                    }
+                                    .group-input {
+                                        padding: 0.7rem 0.75rem;
+                                        font-size: 0.875rem;
+                                        outline: none;
+                                        width: 100%;
+                                        border-radius: 0.25rem;
+                                        border: 1px solid #a5acba70;
+                                    }
+                                   
+    
+                                    .example {
+                                        font-size: 0.75rem;
+                                        font-style: italic;
+                                        color: rgb(84, 84, 84);
+                                    }
+    
+                                    .group-item-box {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 1rem;
+                                        .left-box {
+                                            img {
+                                                width: 4rem;
+                                                border: 1px solid #a5acba70;
+                                                border-radius: 9999px;
+                                            }
+                                        }
+                                        .right-box {
+                                            input[type="file"] {
+                                                position: relative;
+                                                appearance: none !important;
+                                                color: rgb(92, 92, 92);
+                                            }
+                                            input[type="file"]::file-selector-button {
+                                                border-radius: 4px;
+                                                padding: 0 16px;
+                                                height: 40px;
+                                                cursor: pointer;
+                                                background-color: rgb(105, 60, 255);
+                                                margin-right: 16px;
+                                                transition: background-color 200ms;
+                                                border: none;
+                                                border-radius: 20px;
+                                                color: #fff;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .custom-btn {
+                                    padding: 0.75rem 1rem;
+                                    width: 100%;
+                                    border: 1px solid #a5acba70;
+                                    border-radius: 0.25rem;
+                                    background-color: #ffffff;
+                                    cursor: pointer;
+                                    margin-bottom: 1rem;
+    
+                                    .btn-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        .left {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: start;
+                                            .top-txt {
+                                                font-weight: 500;
+                                                font-size: 0.875rem;
+                                                line-height: 1.5715;
+                                                margin-bottom: 0.25rem;
+                                            }
+                                            .bottom-txt {
+                                                font-size: 0.875rem;
+                                                line-height: 1.5715;
+                                                color: rgb(84, 84, 84);
+                                                font-style: italic;
+                                            }
+                                        }
+                                        .right {
+                                            border: 1px solid #a5acba70;
+                                            border-radius: 9999px;
+                                            cursor: pointer;
+                                            svg {
+                                                vertical-align: middle;
+                                            }
+                                            .c05gp {
+                                                fill: #6366f1;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .btn-pay {
+                                    width: 100%;
+                                    background-color: $base-color;
+                                    padding: 0.7rem 0.75rem;
+                                    border-radius: 9999px;
+                                    border: none;
+                                    font-size: 0.875rem;
+                                    font-weight: 500;
+                                    color: #ffffff;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    margin-bottom: 1rem;
+                                    &:hover {
+                                        background-color: $base-hover-color;
+                                    }
+                                }
+    
+                                .service-txt {
+                                    font-size: 0.75rem;
+                                    line-height: 1.5;
+                                    margin-bottom: 3rem;
+                                    a{
+                                        text-decoration: underline;
+                                        color: #0ea5ec;
+                                    }
+                                }
+                            }
+                        }
+                        .divider-box {
+                            margin: 1.5rem 0;
+                            display: flex;
+                            align-items: center;
+                            .line {
+                                flex-grow: 1;
+                                border-top: 1px solid #a5acba70;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-side-wrapper {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .postjob-main {
+        display: flex;
+        .content-postjob-wrapper {
+            width: 100%;
+            height: auto;
+            position: relative;
+            .content-postjob-container {
+                max-width: 29rem;
+                width: 100%;
+                height: 100%;
+                padding: 0 1.5rem;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                flex-direction: column;
+                .postjob-header {
+                    .header-container {
+                        height: 4rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        svg {
+                            .c05gp {
+                                fill: #6366f1;
+                            }
+                            .crxnc {
+                                fill: #a5b4fc;
+                            }
+                        }
+                    }
+                }
+                .form-container {
+                    padding: 2rem 0;
+                    .title-box {
+                        margin-bottom: 2.5rem;
+                        .title {
+                            font-size: 2.25rem;
+                            font-weight: 800;
+                            margin-bottom: 1rem;
+                        }
+                        .subtitle {
+                            color: #6b7280;
+                            line-height: 1.5rem;
+                        }
+                    }
+    
+                    form {
+                        .group-box {
+                            .group-title {
+                                font-size: 1.125rem;
+                                line-height: 1.5;
+                                font-weight: 700;
+                                margin-bottom: 1.25rem;
+                                span {
+                                    color: $base-color;
+                                }
+                            }
+    
+                            .group-list {
+                                .group-item {
+                                    margin-bottom: 1rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1rem;
+    
+                                    textarea {
+                                        resize: vertical;
+                                    }
+    
+                                    .group-label {
+                                        font-size: 0.875rem;
+                                        font-weight: 500;
+                                        .required-span {
+                                            color: red;
+                                        }
+                                        .optional-span {
+                                            color: rgb(84, 84, 84);
+                                        }
+                                    }
+                                    .group-input {
+                                        padding: 0.7rem 0.75rem;
+                                        font-size: 0.875rem;
+                                        outline: none;
+                                        width: 100%;
+                                        border-radius: 0.25rem;
+                                        border: 1px solid #a5acba70;
+                                    }
+                                   
+    
+                                    .example {
+                                        font-size: 0.75rem;
+                                        font-style: italic;
+                                        color: rgb(84, 84, 84);
+                                    }
+    
+                                    .group-item-box {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 1rem;
+                                        .left-box {
+                                            img {
+                                                width: 4rem;
+                                                border: 1px solid #a5acba70;
+                                                border-radius: 9999px;
+                                            }
+                                        }
+                                        .right-box {
+                                            input[type="file"] {
+                                                position: relative;
+                                                appearance: none !important;
+                                                color: rgb(92, 92, 92);
+                                            }
+                                            input[type="file"]::file-selector-button {
+                                                border-radius: 4px;
+                                                padding: 0 16px;
+                                                height: 40px;
+                                                cursor: pointer;
+                                                background-color: rgb(105, 60, 255);
+                                                margin-right: 16px;
+                                                transition: background-color 200ms;
+                                                border: none;
+                                                border-radius: 20px;
+                                                color: #fff;
+                                                font-weight: 600;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .custom-btn {
+                                    padding: 0.75rem 1rem;
+                                    width: 100%;
+                                    border: 1px solid #a5acba70;
+                                    border-radius: 0.25rem;
+                                    background-color: #ffffff;
+                                    cursor: pointer;
+                                    margin-bottom: 1rem;
+    
+                                    .btn-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                        .left {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: start;
+                                            .top-txt {
+                                                font-weight: 500;
+                                                font-size: 0.875rem;
+                                                line-height: 1.5715;
+                                                margin-bottom: 0.25rem;
+                                            }
+                                            .bottom-txt {
+                                                font-size: 0.875rem;
+                                                line-height: 1.5715;
+                                                color: rgb(84, 84, 84);
+                                                font-style: italic;
+                                            }
+                                        }
+                                        .right {
+                                            border: 1px solid #a5acba70;
+                                            border-radius: 9999px;
+                                            cursor: pointer;
+                                            svg {
+                                                vertical-align: middle;
+                                            }
+                                            .c05gp {
+                                                fill: #6366f1;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                .btn-pay {
+                                    width: 100%;
+                                    background-color: $base-color;
+                                    padding: 0.7rem 0.75rem;
+                                    border-radius: 9999px;
+                                    border: none;
+                                    font-size: 0.875rem;
+                                    font-weight: 500;
+                                    color: #ffffff;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    cursor: pointer;
+                                    margin-bottom: 1rem;
+                                    &:hover {
+                                        background-color: $base-hover-color;
+                                    }
+                                }
+    
+                                .service-txt {
+                                    font-size: 0.75rem;
+                                    line-height: 1.5;
+                                    margin-bottom: 3rem;
+                                    a{
+                                        text-decoration: underline;
+                                        color: #0ea5ec;
+                                    }
+                                }
+                            }
+                        }
+                        .divider-box {
+                            margin: 1.5rem 0;
+                            display: flex;
+                            align-items: center;
+                            .line {
+                                flex-grow: 1;
+                                border-top: 1px solid #a5acba70;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .right-side-wrapper {
+            display: none;
+        }
+    }
+}

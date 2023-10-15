@@ -1,0 +1,233 @@
+.hero-section {
+    .hero-wrapper {
+        height: 60vh;
+        overflow: hidden;
+        position: relative;
+
+        .bg-box {
+            img {
+                width: 100%;
+            }
+        }
+        .hero-content {
+            position: absolute;
+            top: 30%;
+            max-width: 48rem;
+            .hero-title {
+                font-size: 3.75rem;
+                font-weight: 800;
+                margin-bottom: 1.5rem;
+                span {
+                    font-family: "Nothing You Could Do", cursive;
+                    font-weight: 400;
+                    color: $base-color;
+                }
+            }
+            .hero-txt {
+                font-size: 1.125rem;
+                font-weight: 400;
+                color: $base-font-color;
+                margin-bottom: 2rem;
+                line-height: 1.5rem;
+            }
+
+            .btn-avtr-wrapper {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                .btn-box {
+                    .post-job-btn {
+                        color: #ffffff;
+                        padding: 0.5rem 1rem;
+                        background-color: $base-color;
+                        border-radius: 9999px;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        &:hover {
+                            background-color: $base-hover-color;
+                        }
+                    }
+                }
+                .avatar-container {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    .left-box {
+                        img {
+                            border-radius: 50%;
+                            margin-left: -12px;
+                        }
+                    }
+                    .right-box {
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        span {
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-section {
+        .hero-wrapper {
+            height: 40vh;
+            overflow: hidden;
+            position: relative;
+
+            .bg-box {
+                display: block;
+            }
+            .hero-content {
+                position: absolute;
+                top: 30%;
+                left: 0;
+                max-width: 48rem;
+                text-align: start;
+                padding: 0 1.5rem;
+
+                .hero-title {
+                    font-size: 3.75rem;
+                    font-weight: 800;
+                    margin-bottom: 1.5rem;
+                    span {
+                        font-family: "Nothing You Could Do", cursive;
+                        font-weight: 400;
+                        color: $base-color;
+                    }
+                }
+                .hero-txt {
+                    font-size: 1.125rem;
+                    font-weight: 400;
+                    text-align: start;
+                    color: $base-font-color;
+                    margin-bottom: 2rem;
+                    line-height: 1.5rem;
+                }
+
+                .btn-avtr-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 30px;
+                    .btn-box {
+                        .post-job-btn {
+                            color: #ffffff;
+                            padding: 0.5rem 1rem;
+                            background-color: $base-color;
+                            border-radius: 9999px;
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            &:hover {
+                                background-color: $base-hover-color;
+                            }
+                        }
+                    }
+                    .avatar-container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 20px;
+                        .left-box {
+                            img {
+                                border-radius: 50%;
+                                margin-left: -12px;
+                            }
+                        }
+                        .right-box {
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            span {
+                                color: $base-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section {
+        .hero-wrapper {
+            height: 60vh;
+            overflow: visible;
+            position: relative;
+
+            .bg-box {
+                display: none;
+            }
+            .hero-content {
+                position: absolute;
+                top: 20%;
+                left: 0;
+                max-width: 48rem;
+                text-align: center;
+                padding: 0 1.5rem;
+
+                .hero-title {
+                    font-size: 3rem;
+                    font-weight: 800;
+                    margin-bottom: 1.5rem;
+                    span {
+                        font-family: "Nothing You Could Do", cursive;
+                        font-weight: 400;
+                        color: $base-color;
+                    }
+                }
+                .hero-txt {
+                    font-size: 1.125rem;
+                    font-weight: 400;
+                    text-align: center;
+                    color: $base-font-color;
+                    margin-bottom: 2rem;
+                    line-height: 1.5rem;
+                }
+
+                .btn-avtr-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+                    .btn-box {
+                        .post-job-btn {
+                            color: #ffffff;
+                            padding: 0.5rem 1rem;
+                            background-color: $base-color;
+                            border-radius: 9999px;
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            &:hover {
+                                background-color: $base-hover-color;
+                            }
+                        }
+                    }
+                    .avatar-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 20px;
+                        .left-box {
+                            margin-left: 17px;
+                            img {
+                                border-radius: 50%;
+                                margin-left: -12px;
+                            }
+                        }
+                        .right-box {
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            span {
+                                color: $base-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

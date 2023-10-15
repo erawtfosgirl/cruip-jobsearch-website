@@ -1,0 +1,15 @@
+.container{
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0;
+}
+@import './base/reset';
+@import './abstract/variables';
+@import './layout/header';
+@import './pages/hero';
+@import './pages/press';
+@import './pages/joblist';
+@import './layout/footer';
+@import './pages/login';
+@import './pages/postjob';
+@import './pages/applyjob';

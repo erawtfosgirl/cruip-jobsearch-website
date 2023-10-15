@@ -1,0 +1,318 @@
+footer {
+    .footer-wrapper {
+        padding: 3rem 0;
+        .top-area {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+
+            .logo {
+                .c05gp {
+                    fill: #6366f1;
+                }
+                .crxnc {
+                    fill: #a5b4fc;
+                }
+            }
+
+            .links-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 1rem;
+
+                .follow-txt {
+                    font-family: Nothing You Could Do, cursive;
+                    font-size: 1.25rem;
+                    color: $base-color;
+                }
+                .sm-link-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+
+                    li {
+                        a {
+                            border-radius: 50%;
+                            background-color: #bcc7fea0;
+                            width: 2rem;
+                            height: 2rem;
+                            display: inline-block;
+                            transition: 0.2s;
+
+                            svg {
+                                width: 2rem;
+                                height: 2rem;
+                            }
+                            .ca49d {
+                                fill: $base-color;
+                            }
+
+                            &:hover {
+                                background-color: $base-color;
+                                .ca49d {
+                                    fill: #ffffff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .copyright {
+                font-size: 0.875rem;
+                color: #515353;
+            }
+            .right-links {
+                .link-list {
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+
+                    li {
+                        position: relative;
+                        a {
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            color: #515353;
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                        &:not(:last-child) {
+                            &::after {
+                                content: ".";
+                                position: absolute;
+                                bottom: 4px;
+                                padding: 0 0.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    footer {
+        .footer-wrapper {
+            padding: 3rem 1.5rem;
+            .top-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+    
+                .logo {
+                    .c05gp {
+                        fill: #6366f1;
+                    }
+                    .crxnc {
+                        fill: #a5b4fc;
+                    }
+                }
+    
+                .links-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+    
+                    .follow-txt {
+                        font-family: Nothing You Could Do, cursive;
+                        font-size: 1.25rem;
+                        color: $base-color;
+                    }
+                    .sm-link-list {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1rem;
+    
+                        li {
+                            a {
+                                border-radius: 50%;
+                                background-color: #bcc7fea0;
+                                width: 2rem;
+                                height: 2rem;
+                                display: inline-block;
+                                transition: 0.2s;
+    
+                                svg {
+                                    width: 2rem;
+                                    height: 2rem;
+                                }
+                                .ca49d {
+                                    fill: $base-color;
+                                }
+    
+                                &:hover {
+                                    background-color: $base-color;
+                                    .ca49d {
+                                        fill: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .bottom-area {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .copyright {
+                    font-size: 0.875rem;
+                    color: #515353;
+                }
+                .right-links {
+                    .link-list {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+    
+                        li {
+                            position: relative;
+                            a {
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                color: #515353;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            &:not(:last-child) {
+                                &::after {
+                                    content: ".";
+                                    position: absolute;
+                                    bottom: 4px;
+                                    padding: 0 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer {
+        .footer-wrapper {
+            padding: 3rem 1rem;
+            .top-area {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+    
+                .logo {
+                    .c05gp {
+                        fill: #6366f1;
+                    }
+                    .crxnc {
+                        fill: #a5b4fc;
+                    }
+                }
+    
+                .links-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 1rem;
+    
+                    .follow-txt {
+                        font-family: Nothing You Could Do, cursive;
+                        font-size: 1.25rem;
+                        color: $base-color;
+                    }
+                    .sm-link-list {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 1rem;
+    
+                        li {
+                            a {
+                                border-radius: 50%;
+                                background-color: #bcc7fea0;
+                                width: 2rem;
+                                height: 2rem;
+                                display: inline-block;
+                                transition: 0.2s;
+    
+                                svg {
+                                    width: 2rem;
+                                    height: 2rem;
+                                }
+                                .ca49d {
+                                    fill: $base-color;
+                                }
+    
+                                &:hover {
+                                    background-color: $base-color;
+                                    .ca49d {
+                                        fill: #ffffff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .bottom-area {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1rem;
+                .copyright {
+                    font-size: 0.875rem;
+                    color: #515353;
+                    order: 2;
+                }
+                .right-links {
+                    order: 1;
+                    .link-list {
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+    
+                        li {
+                            position: relative;
+                            a {
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                color: #515353;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                            &:not(:last-child) {
+                                &::after {
+                                    content: ".";
+                                    position: absolute;
+                                    bottom: 4px;
+                                    padding: 0 0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

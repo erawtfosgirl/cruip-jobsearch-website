@@ -1,0 +1,157 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+
+        .logo {
+            .c05gp {
+                fill: #6366f1;
+            }
+            .crxnc {
+                fill: #a5b4fc;
+            }
+        }
+        nav {
+            .link-list {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 1rem;
+
+                .sign-btn {
+                    color: $base-color;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                .post-btn {
+                    color: #ffffff;
+                    padding: 0.5rem 1rem;
+                    background-color: $base-color;
+                    border-radius: 9999px;
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    &:hover {
+                        background-color: $base-hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+            padding: 0 1.5rem;
+    
+            .logo {
+                .c05gp {
+                    fill: #6366f1;
+                }
+                .crxnc {
+                    fill: #a5b4fc;
+                }
+            }
+            nav {
+                .link-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 1rem;
+    
+                    .sign-btn {
+                        color: $base-color;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .post-btn {
+                        color: #ffffff;
+                        padding: 0.5rem 1rem;
+                        background-color: $base-color;
+                        border-radius: 9999px;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        &:hover {
+                            background-color: $base-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    header {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 9999;
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 4rem;
+            padding: 0 1rem;
+    
+            .logo {
+                .c05gp {
+                    fill: #6366f1;
+                }
+                .crxnc {
+                    fill: #a5b4fc;
+                }
+            }
+            nav {
+                .link-list {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 1rem;
+    
+                    .sign-btn {
+                        color: $base-color;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                    .post-btn {
+                        color: #ffffff;
+                        padding: 0.5rem 1rem;
+                        background-color: $base-color;
+                        border-radius: 9999px;
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        &:hover {
+                            background-color: $base-hover-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

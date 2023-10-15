@@ -1,0 +1,1252 @@
+.applyjob-page-content {
+    padding-top: 7rem;
+    .apllyjob-wrapper {
+        display: flex;
+        gap: 5rem;
+        .main-content {
+            flex: 1;
+            .description-wrapper {
+                .link-box {
+                    margin-bottom: 1rem;
+                    .all-job-link {
+                        font-weight: 500;
+                        color: $base-color;
+                    }
+                }
+                .title-job {
+                    font-size: 2.25rem;
+                    line-height: 1.277;
+                    letter-spacing: -0.01em;
+                    font-weight: 800;
+                    margin-bottom: 2.5rem;
+                    width: 80%;
+                }
+
+                .description-container {
+                    padding-bottom: 2rem;
+                    .description-boxes {
+                        .title-box {
+                            font-size: 1.25rem;
+                            line-height: 1.5;
+                            letter-spacing: -0.01em;
+                            font-weight: 700;
+                            margin-bottom: 0.75rem;
+                        }
+                        .ds-box {
+                            p {
+                                color: #6b7290;
+                                margin-bottom: 0.75rem;
+                                line-height: 1.5rem;
+                                letter-spacing: -0.01rem;
+                            }
+                        }
+
+                        .things-list {
+                            list-style: disc;
+                            padding-left: 1rem;
+                            li {
+                                margin-bottom: 1rem;
+                                line-height: 1.5rem;
+                                letter-spacing: -0.01rem;
+                                color: #6b7290;
+                            }
+                        }
+                    }
+                    .links-container {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        gap: 1rem;
+
+                        .follow-txt {
+                            font-family:
+                                Nothing You Could Do,
+                                cursive;
+                            font-size: 1.25rem;
+                            color: #9ca3af;
+                        }
+                        .sm-link-list {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 1rem;
+
+                            li {
+                                a {
+                                    border-radius: 50%;
+                                    background-color: #bcc7fea0;
+                                    width: 2rem;
+                                    height: 2rem;
+                                    display: inline-block;
+                                    transition: 0.2s;
+
+                                    svg {
+                                        width: 2rem;
+                                        height: 2rem;
+                                    }
+                                    .ca49d {
+                                        fill: $base-color;
+                                    }
+
+                                    &:hover {
+                                        background-color: $base-color;
+                                        .ca49d {
+                                            fill: #ffffff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .job-list {
+                // flex: 2;
+                h2 {
+                    font-weight: 700;
+                    font-size: 1.875rem;
+                    margin-bottom: 2.5rem;
+                }
+                .list-container {
+                    .list-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 1.5rem;
+                        border-bottom: 1px solid #9ca3af70;
+                        padding: 1.5rem;
+
+                        &:nth-child(1) {
+                            border-top: 1px solid #9ca3af70;
+                        }
+
+                        .content-job {
+                            flex: 3;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .left-content {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1rem;
+                                .title-box {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 5px;
+                                    .title-name {
+                                        font-weight: 600;
+                                        font-size: 0.875rem;
+                                    }
+                                    .cw3c4 {
+                                        fill: #fbbf24;
+                                        width: 0.75rem;
+                                        height: 0.75rem;
+                                    }
+                                }
+                                .name-box {
+                                    .job-name {
+                                        font-weight: 700;
+                                        font-size: 1.125rem;
+                                        color: #000000;
+                                    }
+                                }
+                                .content-btns {
+                                    a {
+                                        font-size: 0.75rem;
+                                        font-weight: 500;
+                                        color: #686c74;
+                                        padding: 0.145rem 0.5rem;
+                                        border-radius: 0.375rem;
+                                        background-color: #eef2ff;
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                            .right-content {
+                                .time-job {
+                                    display: block;
+                                    color: #686c74;
+                                    font-size: 0.875rem;
+                                    font-weight: 300;
+                                    font-style: italic;
+                                }
+                                .apply-box {
+                                    display: none;
+
+                                    .apply-btn {
+                                        background-color: $base-color;
+                                        padding: 0.475rem 0.75rem;
+                                        border-radius: 9999px;
+                                        font-size: 0.875rem;
+                                        font-weight: 500;
+                                        color: #ffffff;
+                                        display: inline-flex;
+                                        align-items: center;
+                                        justify-content: center;
+
+                                        span {
+                                            margin-left: 5px;
+                                            color: #c5cbd7;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:hover .time-job {
+                            display: none !important;
+                        }
+                        &:hover .apply-box {
+                            display: block !important;
+                        }
+                    }
+
+                    .newsletter-item {
+                        padding: 2rem 0;
+
+                        .newsletter-box {
+                            background-color: #f9fafb;
+                            border-radius: 0.75rem;
+                            border: 1px solid #bcc4d270;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 1.5rem;
+                            padding: 1.5rem 1rem;
+                            transform: rotate(-1deg);
+                            transition: 0.2s;
+
+                            &:hover {
+                                transform: rotate(0);
+                            }
+
+                            .title-newsletter {
+                                font-family:
+                                    Nothing You Could Do,
+                                    cursive;
+                                font-size: 1.25rem;
+                                color: $base-color;
+                            }
+                            .txt-newsletter {
+                                font-weight: 700;
+                                font-size: 1.5rem;
+                            }
+                            .form-container {
+                                .input-email {
+                                    padding: 0.475rem 0.75rem;
+                                    margin-right: 0.5rem;
+                                    font-size: 0.875rem;
+                                    border-radius: 0.25rem;
+                                    border: 1px solid #a5acba70;
+                                    outline: none;
+                                }
+                                .btn-post-email {
+                                    color: #ffffff;
+                                    padding: 0.5rem 1rem;
+                                    background-color: $base-color;
+                                    border-radius: 9999px;
+                                    font-size: 0.875rem;
+                                    font-weight: 500;
+                                    border: none;
+                                    cursor: pointer;
+                                    &:hover {
+                                        background-color: $base-hover-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .testimonials-wrapper {
+                    margin-top: 2.5rem;
+                    .testimonial-container {
+                        .testimonial-item {
+                            padding: 1.25rem;
+                            margin-bottom: 2rem;
+                            background-color: #f0fdfa;
+                            border-radius: 0.75rem;
+                            border: 1px solid #9bf6e5;
+                            transform: rotate(1deg);
+                            transition: 0.2s;
+
+                            &:hover {
+                                transform: rotate(0);
+                            }
+
+                            .testimonial-box {
+                                display: flex;
+                                align-items: center;
+                                gap: 1.25rem;
+
+                                .testimonial-img {
+                                    position: relative;
+                                    img {
+                                        border-radius: 9999px;
+                                    }
+                                    .curhz {
+                                        fill: #818cf8;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                    }
+                                }
+
+                                figure {
+                                    blockquote {
+                                        p {
+                                            font-weight: 700;
+                                            font-size: 1.125rem;
+                                            color: #1f2937;
+                                        }
+                                    }
+                                    figcaption {
+                                        font-weight: 500;
+                                        font-size: 0.875rem;
+                                        color: #55545c;
+                                        margin-top: 0.5rem;
+                                        a {
+                                            color: #14b8a6;
+                                        }
+                                        .dif-domen-color {
+                                            color: #0ea5ec;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .different-item-features {
+                            background-color: #f0f9ff;
+                            border: 1px solid #cbecfe;
+                            transform: rotate(-1deg);
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+        aside {
+            flex: 0.4;
+            .sidebar-wrapper {
+                background-color: #f9fafb;
+                padding: 1.25rem;
+                border: 1px solid #dcdddf;
+                border-radius: 0.75rem;
+                position: sticky;
+                top: 20px;
+                .sidebar-container {
+                    .top-sidebar {
+                        text-align: center;
+                        margin-bottom: 1.5rem;
+                        .top-title {
+                            font-size: 1.125rem;
+                            line-height: 1.5;
+                            letter-spacing: -0.01em;
+                            font-weight: 700;
+                        }
+                    }
+                    .list-sidebar-box {
+                        .sidebar-list {
+                            li {
+                                display: flex;
+                                align-items: center;
+                                gap: 0.75rem;
+                                margin-bottom: 1rem;
+                                font-size: 0.875rem;
+                                line-height: 1.5715;
+                                .c2x5e {
+                                    fill: #9ca3af;
+                                }
+                            }
+                        }
+                    }
+                    .btn-box {
+                        .apply-btn {
+                            background-color: $base-color;
+                            padding: 0.575rem 0.75rem;
+                            border-radius: 9999px;
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            color: #ffffff;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            transition: .2s;
+                            &:hover{
+                                background-color: $base-hover-color;
+                            }
+                            &:hover span{
+                                margin-left: 10px;
+                            }
+
+                            span {
+                                margin-left: 5px;
+                                color: #c5cbd7;
+                                transition: .2s;
+                            }
+                        }
+                    }
+
+                    .btn-visit-box {
+                        text-align: center;
+                        margin-top: 1.5rem;
+                        .btn-visit {
+                            font-size: 0.875rem;
+                            line-height: 1.5715;
+                            font-weight: 500;
+                            color: $base-color;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .applyjob-page-content {
+        padding-top: 7rem;
+        .apllyjob-wrapper {
+            display: flex;
+            gap: 5rem;
+            padding: 0 1.5rem;
+            .main-content {
+                flex: 1;
+                .description-wrapper {
+                    .link-box {
+                        margin-bottom: 1rem;
+                        .all-job-link {
+                            font-weight: 500;
+                            color: $base-color;
+                        }
+                    }
+                    .title-job {
+                        font-size: 2.25rem;
+                        line-height: 1.277;
+                        letter-spacing: -0.01em;
+                        font-weight: 800;
+                        margin-bottom: 2.5rem;
+                        width: 100%;
+                    }
+    
+                    .description-container {
+                        padding-bottom: 2rem;
+                        .description-boxes {
+                            .title-box {
+                                font-size: 1.25rem;
+                                line-height: 1.5;
+                                letter-spacing: -0.01em;
+                                font-weight: 700;
+                                margin-bottom: 0.75rem;
+                            }
+                            .ds-box {
+                                p {
+                                    color: #6b7290;
+                                    margin-bottom: 0.75rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: -0.01rem;
+                                }
+                            }
+    
+                            .things-list {
+                                list-style: disc;
+                                padding-left: 1rem;
+                                li {
+                                    margin-bottom: 1rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: -0.01rem;
+                                    color: #6b7290;
+                                }
+                            }
+                        }
+                        .links-container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            gap: 1rem;
+    
+                            .follow-txt {
+                                font-family:
+                                    Nothing You Could Do,
+                                    cursive;
+                                font-size: 1.25rem;
+                                color: #9ca3af;
+                            }
+                            .sm-link-list {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 1rem;
+    
+                                li {
+                                    a {
+                                        border-radius: 50%;
+                                        background-color: #bcc7fea0;
+                                        width: 2rem;
+                                        height: 2rem;
+                                        display: inline-block;
+                                        transition: 0.2s;
+    
+                                        svg {
+                                            width: 2rem;
+                                            height: 2rem;
+                                        }
+                                        .ca49d {
+                                            fill: $base-color;
+                                        }
+    
+                                        &:hover {
+                                            background-color: $base-color;
+                                            .ca49d {
+                                                fill: #ffffff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .job-list {
+                    // flex: 2;
+                    h2 {
+                        font-weight: 700;
+                        font-size: 1.875rem;
+                        margin-bottom: 2.5rem;
+                    }
+                    .list-container {
+                        .list-item {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: start;
+                            gap: 1.5rem;
+                            border-bottom: 1px solid #9ca3af70;
+                            padding: 1.5rem;
+
+                            &:nth-child(1) {
+                                border-top: 1px solid #9ca3af70;
+                            }
+
+                            .content-job {
+                                flex: 3;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                justify-content: space-between;
+                                .left-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1rem;
+                                    .title-box {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+
+                                        .title-name {
+                                            font-weight: 600;
+                                            font-size: 0.875rem;
+                                        }
+                                        .cw3c4 {
+                                            fill: #fbbf24;
+                                            width: 0.75rem;
+                                            height: 0.75rem;
+                                        }
+                                    }
+                                    .name-box {
+                                        .job-name {
+                                            font-weight: 700;
+                                            font-size: 1.125rem;
+                                            color: #000000;
+                                        }
+                                    }
+                                    .content-btns {
+                                        a {
+                                            font-size: 0.75rem;
+                                            font-weight: 500;
+                                            color: #686c74;
+                                            padding: 0.145rem 0.5rem;
+                                            border-radius: 0.375rem;
+                                            background-color: #eef2ff;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                                .right-content {
+                                    margin-top: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+
+                                    .time-job {
+                                        display: block;
+                                        color: #686c74;
+                                        font-size: 0.875rem;
+                                        font-weight: 300;
+                                        font-style: italic;
+                                        order: 2;
+                                    }
+                                    .apply-box {
+                                        display: block;
+                                        order: 1;
+
+                                        .apply-btn {
+                                            background-color: $base-color;
+                                            padding: 0.475rem 0.75rem;
+                                            border-radius: 9999px;
+                                            font-size: 0.875rem;
+                                            font-weight: 500;
+                                            color: #ffffff;
+                                            display: inline-flex;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            span {
+                                                margin-left: 5px;
+                                                color: #c5cbd7;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover .time-job {
+                                display: none !important;
+                            }
+                            &:hover .apply-box {
+                                display: block !important;
+                            }
+                        }
+
+                        .newsletter-item {
+                            padding: 2rem 0;
+
+                            .newsletter-box {
+                                background-color: #f9fafb;
+                                border-radius: 0.75rem;
+                                border: 1px solid #bcc4d270;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 1.5rem;
+                                padding: 1.5rem 1rem;
+                                transform: rotate(-1deg);
+                                transition: 0.2s;
+    
+                                &:hover {
+                                    transform: rotate(0);
+                                }
+    
+                                .title-newsletter {
+                                    font-family:
+                                        Nothing You Could Do,
+                                        cursive;
+                                    font-size: 1.25rem;
+                                    color: $base-color;
+                                }
+                                .txt-newsletter {
+                                    font-weight: 700;
+                                    font-size: 1.5rem;
+                                    line-height: 2rem;
+                                    text-align: center;
+                                }
+                                .form-container {
+                                    .input-email {
+                                        padding: 0.475rem 0.75rem;
+                                        margin-right: 0.5rem;
+                                        font-size: 0.875rem;
+                                        border-radius: 0.25rem;
+                                        border: 1px solid #a5acba70;
+                                        outline: none;
+                                    }
+                                    .btn-post-email {
+                                        color: #ffffff;
+                                        padding: 0.5rem 1rem;
+                                        background-color: $base-color;
+                                        border-radius: 9999px;
+                                        font-size: 0.875rem;
+                                        font-weight: 500;
+                                        border: none;
+                                        &:hover {
+                                            background-color: $base-hover-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                    .testimonials-wrapper {
+                        margin-top: 2.5rem;
+                        .testimonial-container {
+                            .testimonial-item {
+                                padding: 1.25rem;
+                                margin-bottom: 2rem;
+                                background-color: #f0fdfa;
+                                border-radius: 0.75rem;
+                                border: 1px solid #9bf6e5;
+                                transform: rotate(1deg);
+                                transition: 0.2s;
+    
+                                &:hover {
+                                    transform: rotate(0);
+                                }
+    
+                                .testimonial-box {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1.25rem;
+    
+                                    .testimonial-img {
+                                        position: relative;
+                                        img {
+                                            border-radius: 9999px;
+                                        }
+                                        .curhz {
+                                            fill: #818cf8;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                        }
+                                    }
+    
+                                    figure {
+                                        blockquote {
+                                            p {
+                                                font-weight: 700;
+                                                font-size: 1.125rem;
+                                                color: #1f2937;
+                                            }
+                                        }
+                                        figcaption {
+                                            font-weight: 500;
+                                            font-size: 0.875rem;
+                                            color: #55545c;
+                                            margin-top: 0.5rem;
+                                            a {
+                                                color: #14b8a6;
+                                            }
+                                            .dif-domen-color {
+                                                color: #0ea5ec;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+    
+                            .different-item-features {
+                                background-color: #f0f9ff;
+                                border: 1px solid #cbecfe;
+                                transform: rotate(-1deg);
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+            aside {
+                flex: 0.6;
+                .sidebar-wrapper {
+                    background-color: #f9fafb;
+                    padding: 1.25rem;
+                    border: 1px solid #dcdddf;
+                    border-radius: 0.75rem;
+                    position: sticky;
+                    top: 20px;
+                    .sidebar-container {
+                        .top-sidebar {
+                            text-align: center;
+                            margin-bottom: 1.5rem;
+                            .top-title {
+                                font-size: 1.125rem;
+                                line-height: 1.5;
+                                letter-spacing: -0.01em;
+                                font-weight: 700;
+                            }
+                        }
+                        .list-sidebar-box {
+                            .sidebar-list {
+                                li {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.75rem;
+                                    margin-bottom: 1rem;
+                                    font-size: 0.875rem;
+                                    line-height: 1.5715;
+                                    .c2x5e {
+                                        fill: #9ca3af;
+                                    }
+                                }
+                            }
+                        }
+                        .btn-box {
+                            .apply-btn {
+                                background-color: $base-color;
+                                padding: 0.575rem 0.75rem;
+                                border-radius: 9999px;
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                color: #ffffff;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+    
+                                span {
+                                    margin-left: 5px;
+                                    color: #c5cbd7;
+                                }
+                            }
+                        }
+    
+                        .btn-visit-box {
+                            text-align: center;
+                            margin-top: 1.5rem;
+                            .btn-visit {
+                                font-size: 0.875rem;
+                                line-height: 1.5715;
+                                font-weight: 500;
+                                color: $base-color;
+    
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .applyjob-page-content {
+        padding-top: 7rem;
+        .apllyjob-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            padding: 0 1rem;
+            .main-content {
+                flex: 1;
+                order: 2;
+                .description-wrapper {
+                    .link-box {
+                        margin-bottom: 1rem;
+                        .all-job-link {
+                            font-weight: 500;
+                            color: $base-color;
+                        }
+                    }
+                    .title-job {
+                        font-size: 2.25rem;
+                        line-height: 1.277;
+                        letter-spacing: -0.01em;
+                        font-weight: 800;
+                        margin-bottom: 2.5rem;
+                        width: 100%;
+                    }
+
+                    .description-container {
+                        padding-bottom: 2rem;
+                        .description-boxes {
+                            .title-box {
+                                font-size: 1.25rem;
+                                line-height: 1.5;
+                                letter-spacing: -0.01em;
+                                font-weight: 700;
+                                margin-bottom: 0.75rem;
+                            }
+                            .ds-box {
+                                p {
+                                    color: #6b7290;
+                                    margin-bottom: 0.75rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: -0.01rem;
+                                }
+                            }
+
+                            .things-list {
+                                list-style: disc;
+                                padding-left: 1rem;
+                                li {
+                                    margin-bottom: 1rem;
+                                    line-height: 1.5rem;
+                                    letter-spacing: -0.01rem;
+                                    color: #6b7290;
+                                }
+                            }
+                        }
+                        .links-container {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            gap: 1rem;
+
+                            .follow-txt {
+                                font-family:
+                                    Nothing You Could Do,
+                                    cursive;
+                                font-size: 1.25rem;
+                                color: #9ca3af;
+                            }
+                            .sm-link-list {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                gap: 1rem;
+
+                                li {
+                                    a {
+                                        border-radius: 50%;
+                                        background-color: #bcc7fea0;
+                                        width: 2rem;
+                                        height: 2rem;
+                                        display: inline-block;
+                                        transition: 0.2s;
+
+                                        svg {
+                                            width: 2rem;
+                                            height: 2rem;
+                                        }
+                                        .ca49d {
+                                            fill: $base-color;
+                                        }
+
+                                        &:hover {
+                                            background-color: $base-color;
+                                            .ca49d {
+                                                fill: #ffffff;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .job-list {
+                    h2 {
+                        font-weight: 700;
+                        font-size: 1.875rem;
+                        margin-bottom: 2.5rem;
+                    }
+                    .list-container {
+                        .list-item {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            align-items: start;
+                            gap: 1.5rem;
+                            border-bottom: 1px solid #9ca3af70;
+                            padding: 1.5rem;
+
+                            &:nth-child(1) {
+                                border-top: 1px solid #9ca3af70;
+                            }
+
+                            .content-job {
+                                flex: 3;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: start;
+                                justify-content: space-between;
+                                .left-content {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 1rem;
+                                    .title-box {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 5px;
+
+                                        .title-name {
+                                            font-weight: 600;
+                                            font-size: 0.875rem;
+                                        }
+                                        .cw3c4 {
+                                            fill: #fbbf24;
+                                            width: 0.75rem;
+                                            height: 0.75rem;
+                                        }
+                                    }
+                                    .name-box {
+                                        .job-name {
+                                            font-weight: 700;
+                                            font-size: 1.125rem;
+                                            color: #000000;
+                                        }
+                                    }
+                                    .content-btns {
+                                        a {
+                                            font-size: 0.75rem;
+                                            font-weight: 500;
+                                            color: #686c74;
+                                            padding: 0.145rem 0.5rem;
+                                            border-radius: 0.375rem;
+                                            background-color: #eef2ff;
+                                            margin-right: 5px;
+                                        }
+                                    }
+                                }
+                                .right-content {
+                                    margin-top: 20px;
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 20px;
+
+                                    .time-job {
+                                        display: block;
+                                        color: #686c74;
+                                        font-size: 0.875rem;
+                                        font-weight: 300;
+                                        font-style: italic;
+                                        order: 2;
+                                    }
+                                    .apply-box {
+                                        display: block;
+                                        order: 1;
+
+                                        .apply-btn {
+                                            background-color: $base-color;
+                                            padding: 0.475rem 0.75rem;
+                                            border-radius: 9999px;
+                                            font-size: 0.875rem;
+                                            font-weight: 500;
+                                            color: #ffffff;
+                                            display: inline-flex;
+                                            align-items: center;
+                                            justify-content: center;
+
+                                            span {
+                                                margin-left: 5px;
+                                                color: #c5cbd7;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &:hover .time-job {
+                                display: none !important;
+                            }
+                            &:hover .apply-box {
+                                display: block !important;
+                            }
+                        }
+
+                        .newsletter-item {
+                            padding: 2rem 0;
+
+                            .newsletter-box {
+                                background-color: #f9fafb;
+                                border-radius: 0.75rem;
+                                border: 1px solid #bcc4d270;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                align-items: center;
+                                gap: 1.5rem;
+                                padding: 1.5rem 1rem;
+                                transform: rotate(-1deg);
+                                transition: 0.2s;
+
+                                &:hover {
+                                    transform: rotate(0);
+                                }
+
+                                .title-newsletter {
+                                    font-family:
+                                        Nothing You Could Do,
+                                        cursive;
+                                    font-size: 1.25rem;
+                                    color: $base-color;
+                                }
+                                .txt-newsletter {
+                                    font-weight: 700;
+                                    font-size: 1.5rem;
+                                    text-align: center;
+                                    line-height: 2rem;
+                                }
+                                .form-container {
+                                    text-align: center;
+                                    width: 70%;
+                                    margin: auto;
+                                    .input-email {
+                                        padding: 0.475rem 0.75rem;
+                                        margin-right: 0.5rem;
+                                        font-size: 0.875rem;
+                                        border-radius: 0.25rem;
+                                        border: 1px solid #a5acba70;
+                                        outline: none;
+                                        width: 100%;
+                                    }
+                                    .btn-post-email {
+                                        color: #ffffff;
+                                        padding: 0.5rem 1rem;
+                                        background-color: $base-color;
+                                        border-radius: 9999px;
+                                        font-size: 0.875rem;
+                                        font-weight: 500;
+                                        border: none;
+                                        width: 100%;
+                                        margin-top: 20px;
+                                        &:hover {
+                                            background-color: $base-hover-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .testimonials-wrapper {
+                        margin-top: 2.5rem;
+                        .testimonial-container {
+                            .testimonial-item {
+                                padding: 1.25rem;
+                                margin-bottom: 2rem;
+                                background-color: #f0fdfa;
+                                border-radius: 0.75rem;
+                                border: 1px solid #9bf6e5;
+                                transform: rotate(1deg);
+                                transition: 0.2s;
+
+                                &:hover {
+                                    transform: rotate(0);
+                                }
+
+                                .testimonial-box {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 1.25rem;
+
+                                    .testimonial-img {
+                                        position: relative;
+                                        img {
+                                            border-radius: 9999px;
+                                        }
+                                        .curhz {
+                                            fill: #818cf8;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                        }
+                                    }
+
+                                    figure {
+                                        blockquote {
+                                            p {
+                                                font-weight: 700;
+                                                font-size: 1.125rem;
+                                                color: #1f2937;
+                                            }
+                                        }
+                                        figcaption {
+                                            font-weight: 500;
+                                            font-size: 0.875rem;
+                                            color: #55545c;
+                                            margin-top: 0.5rem;
+                                            a {
+                                                color: #14b8a6;
+                                            }
+                                            .dif-domen-color {
+                                                color: #0ea5ec;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .different-item-features {
+                                background-color: #f0f9ff;
+                                border: 1px solid #cbecfe;
+                                transform: rotate(-1deg);
+                                transition: 0.2s;
+                            }
+                        }
+                    }
+                }
+            }
+            aside {
+                flex: 0.4;
+                order: 1;
+                .sidebar-wrapper {
+                    background-color: #f9fafb;
+                    padding: 1.25rem;
+                    border: 1px solid #dcdddf;
+                    border-radius: 0.75rem;
+                    position: sticky;
+                    top: 20px;
+                    .sidebar-container {
+                        .top-sidebar {
+                            text-align: center;
+                            margin-bottom: 1.5rem;
+                            .top-title {
+                                font-size: 1.125rem;
+                                line-height: 1.5;
+                                letter-spacing: -0.01em;
+                                font-weight: 700;
+                            }
+                        }
+                        .list-sidebar-box {
+                            .sidebar-list {
+                                li {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 0.75rem;
+                                    margin-bottom: 1rem;
+                                    font-size: 0.875rem;
+                                    line-height: 1.5715;
+                                    .c2x5e {
+                                        fill: #9ca3af;
+                                    }
+                                }
+                            }
+                        }
+                        .btn-box {
+                            .apply-btn {
+                                background-color: $base-color;
+                                padding: 0.575rem 0.75rem;
+                                border-radius: 9999px;
+                                font-size: 0.875rem;
+                                font-weight: 500;
+                                color: #ffffff;
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+
+                                span {
+                                    margin-left: 5px;
+                                    color: #c5cbd7;
+                                }
+                            }
+                        }
+
+                        .btn-visit-box {
+                            text-align: center;
+                            margin-top: 1.5rem;
+                            .btn-visit {
+                                font-size: 0.875rem;
+                                line-height: 1.5715;
+                                font-weight: 500;
+                                color: $base-color;
+
+                                &:hover {
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
